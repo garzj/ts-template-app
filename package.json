@@ -1,7 +1,7 @@
 {
   "name": "ts-app",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "<template ts app>",
   "main": "./build/index.js",
   "type": "module",
   "scripts": {
@@ -10,15 +10,25 @@
     "start": "node ./build/index.js",
     "deploy": "yarn build && yarn start",
     "dev": "dotenv -v NODE_ENV=development tsx watch --clear-screen=false ./src/index.ts",
-    "ncu": "ncu -u"
+    "ncu": "ncu -u",
+    "lint": "prettier --check . '!./{,data}' && eslint './**/*.{ts,tsx}'",
+    "format": "prettier -w . '!./{,data}' && eslint --fix './**/*.{ts,tsx}'"
   },
   "author": "Johannes Garz <johannes@garz.dev> (https://garz.dev/)",
   "license": "UNLICENSED",
   "devDependencies": {
     "@types/node": "^20.12.7",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
     "dotenv": "^16.4.5",
     "dotenv-cli": "^7.4.1",
+    "eslint": "^9.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-only-warn": "^1.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
     "npm-check-updates": "^16.14.18",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "tsc-alias": "^1.8.8",
     "tsx": "^4.7.2",
     "typescript": "^5.4.5"
