@@ -1,0 +1,26 @@
+{
+  "name": "ts-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./build/index.js",
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc && tsc-alias",
+    "start": "node ./build/index.js",
+    "deploy": "yarn build && yarn start",
+    "dev": "dotenv -v NODE_ENV=development tsx watch --clear-screen=false ./src/index.ts",
+    "ncu": "ncu -u"
+  },
+  "author": "Johannes Garz <johannes@garz.dev> (https://garz.dev/)",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "dotenv": "^16.4.5",
+    "dotenv-cli": "^7.4.1",
+    "npm-check-updates": "^16.14.18",
+    "tsc-alias": "^1.8.8",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.5"
+  }
+}

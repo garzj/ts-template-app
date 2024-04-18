@@ -1,0 +1,8 @@
+services:
+  ts-app:
+    image: localhost/ts-app
+    container_name: ts-app
+    build: .
+    volumes:
+      - './data:/app/data'
+    restart: unless-stopped
