@@ -1,9 +1,11 @@
 {
-  "name": "ts-app",
+  "name": "ts-template-app",
   "version": "0.0.1",
   "description": "<template ts app>",
   "main": "./build/index.js",
   "type": "module",
+  "license": "MIT",
+  "author": "Johannes Garz <johannes@garz.dev> (https://garz.dev/)",
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "tsc && tsc-alias",
@@ -14,8 +16,6 @@
     "lint": "prettier --check . '!./{,data}' && eslint './**/*.{ts,tsx}'",
     "format": "prettier -w . '!./{,data}' && eslint --fix './**/*.{ts,tsx}'"
   },
-  "author": "Johannes Garz <johannes@garz.dev> (https://garz.dev/)",
-  "license": "UNLICENSED",
   "devDependencies": {
     "@types/node": "^20.12.7",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
