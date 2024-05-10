@@ -13,8 +13,8 @@
     "deploy": "yarn build && yarn start",
     "dev": "dotenv -v NODE_ENV=development tsx watch --clear-screen=false ./src/index.ts",
     "ncu": "ncu -u",
-    "lint": "prettier --check . '!./{,data}' && eslint './**/*.{ts,tsx}'",
-    "format": "prettier -w . '!./{,data}' && eslint --fix './**/*.{ts,tsx}'"
+    "lint": "prettier --check . '!./{,data}' && eslint",
+    "format": "prettier -w . '!./{,data}' && eslint --fix"
   },
   "devDependencies": {
     "@types/node": "^20.12.7",
