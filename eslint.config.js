@@ -43,6 +43,8 @@ export default [
       'react/display-name': 0,
       '@typescript-eslint/ban-ts-comment': 'off',
       'ts/return-await': 2,
+      '@typescript-eslint/no-unused-expressions': 'off',
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
   eslintConfigPrettier,
