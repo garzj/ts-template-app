@@ -13,7 +13,8 @@
 
 - `mkdir my-project`
 - `git clone https://github.com/garzj/ts-template-app .`
-- `git remote remove origin`
+- `rm -rf .git`
+- `git init`
 
 ## What to change
 
