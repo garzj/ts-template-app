@@ -12,6 +12,7 @@
     "start": "node ./build/index.js",
     "deploy": "yarn build && yarn start",
     "dev": "dotenv -e .env -v NODE_ENV=development tsx watch --clear-screen=false ./src/index.ts",
+    "prepack": "yarn build",
     "ncu": "ncu -u",
     "lint": "prettier --check . '!./{,data}' && eslint",
     "format": "prettier -w . '!./{,data}' && eslint --fix"
